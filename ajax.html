@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+        <title>TVmovie</title>
+        <link rel="icon" href="lolgoicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-none">
+            <div class="container-fluid">
+              <a href="ajax.html" class="navbar-brand"><img src="tv-movie-logo-png-transparent.png" width="100%"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light fs-4 p-2 p-lg-3" aria-current="page" href="ajax.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light fs-4 p-2 p-lg-3" href="page404.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-4 p-2 p-lg-3" href="page404.html">Series</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <div style="
+                  width: 100%;
+                  background:#ffffffad;;
+                  border-radius: 25px;
+                  text-align: center;">
+                  <input type="search" name="search" id="titre" style="
+                    width: 85%;
+                    height: 7vh;
+                    border: none;
+                    outline: none;
+                    color: #F44336;
+                    border-radius: 25px;
+                    background: transparent;
+                    text-align: center;" onkeyup="chercher()">
+                  <img src="search.png">
+                </div>
+                </form>
+              </div>
+            </div>
+        </nav>
+        <div class="slider">
+            <div class="slide" style="background-image: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0)), url('mg1.jpeg'); "><h1>Dark Shadows</h1></div>
+            <div class="slide" style="background-image: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0)), url('mg2.jpeg');"><h1>Zootopia</h1></div>
+            <div class="slide" style="background-image: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0)), url('mg3.jpeg');"><h1>Your Friend The Rat</h1></div>
+        </div>
+          
+        <script>
+            var slides = document.querySelectorAll('.slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide, 2000);
+    
+            function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].className = 'slide active';
+            }
+        </script>
+        <section class="two">
+            <div class="years">
+                <select id="search_year" onchange="chercher_year()">
+                    <option value="">Year...</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+                <button onclick="chercher_action()" id="action">action</button>
+                <button onclick="chercher_horror()" id="action">Horror</button>
+                <button onclick="chercher_drama()" id="action">Drama</button>
+                <button onclick="chercher_comedy()" id="action">Comedy</button>
+                <button onclick="chercher_crime()" id="action">Crime</button>
+                <button onclick="chercher_war()" id="action">War</button>
+                <button onclick="chercher_animated()" id="action">Animated</button>
+            </div>
+        </section>
+        <section class="one">
+          <div class="cards" id="afficher">
+              <!-- <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/3/34/The_Grudge_2020_Poster.jpeg">
+                  <h2>The Grudge</h2>
+                  <h4>2020</h4>
+              </div> -->
+          </div>
+        </section>
+        <footer>
+          <p>© Ibi27a 2023 All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

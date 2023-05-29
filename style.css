@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.landing,.body2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(0 0 0 / 77%)),url(RAMPAGE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 20px;
+    background-color: #0b0a0e;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(184px, 1fr));
+    gap: 10px;
+    /* margin: 50px 0; */
+    padding: 10PX;
+}
+
+.card {
+    background-color: #0b0a0e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card h4 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #777;
+}  
+
+.one{
+    background-color: #0d0c11;
+}
+footer{
+  background-color: #0d0c11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  border-top: 1px solid #777;
+}
+.two{
+    padding: 10px;
+    background-color: #0b0a0e;
+    box-shadow: 0px 68px 70px 100px rgb(0 0 0);
+}
+#search_year{
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border:none;
+    background-color: #ff0e1e;
+    border-radius: 10px;
+    outline: none;
+    letter-spacing: 6px;
+    color:#fff;
+}
+option {
+    background: #F44336;
+    font-weight: bold;
+    color: #fff;
+}
+
+button#action {
+    cursor: pointer;
+    width: 11%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #ff0e1e;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-family: cursive;
+    border: none;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.error{
+  height: 100vh;
+}
+.opps{
+  margin-top: -15%;
+}
+.opps-center h2{
+  font-family: GAMING;
+}
+
+.navbar-brand{
+  WIDTH: 15%; 
+  filter: drop-shadow(2px 4px 6px black);
+}
+form{
+  width: 35%;
+}
+@media (max-width: 767px){
+  .navbar{
+    background: #0000002e;
+  }
+  .landing{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(0 0 0 / 77%)),url(Night\ Train\ \(2023\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 10px;
+  }
+  #search_year{
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 10px;
+  }
+  button#action{
+    width: 49%;
+    margin-bottom: 10px;
+  }
+  .gif-img{
+    margin-top: -25%;
+    width:100%;
+  }
+  .opps{
+      margin-top: -60%;
+  }
+  .navbar-brand{
+    width: 40%;
+  }
+  form{
+    width: 100%;
+  }
+
+}
+
+
+/* page2.html */
+
+.war,.war2 {
+  margin: 20px;
+  padding: 20px;
+  background-color: #bcfcff45;
+  border-radius: 5px;
+  filter: drop-shadow(2px 4px 6px black);
+  margin-top: 6%;
+}
+
+.bob {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(10,62px);
+}
+.war div img ,.war2 div img {
+    margin-right: 5px;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 10px;
+    border: 6px solid #888;
+    object-fit: cover;
+    grid-column: 1/5;
+    grid-row: 1/11;
+    WIDTH: 100%;
+    HEIGHT: 90VH;
+}
+
+.war div ul,.war2 div ul {
+  list-style-type: none;
+  grid-column: 5/13;
+  grid-row: 1/11;
+}
+
+.war div ul li,.war2 div ul li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #20202052;
+    color: #fff;
+}
+
+.war div ul li:first-child,.war2 div ul li:first-child {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.war div ul li:last-child,.war2 div ul li:last-child {
+  font-size: 14px;
+  color: #888;
+}
+.bb2{
+    width: 40%;
+    height: 13vh;
+    background: #04ff00;
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+.nn{
+  width: 220%;
+}
+li.story {
+  height: 30vh;
+  overflow: auto;
+}
+
+
+      .slider {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center / cover no-repeat;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      .slide h1{
+        width: 50%;
+        font-size: 125px;
+        margin-left: 20px;
+        color: #fff;
+        filter: drop-shadow(2px 4px 6px black);
+      }
+      
+      .slide.active {
+        opacity: 1;
+      }
+@media (max-width: 767px){
+  .war{
+    padding: 10px;
+    margin: -10px;
+    margin-top: 6%;
+    margin-bottom: 20px;
+  }
+  .war2{
+    margin: 10px;
+    margin-top: 6%;
+    margin-bottom: 20px;
+  }
+  .war div img,.war2 div img{
+    height: 75VH;
+    margin-bottom: 30px;
+  }
+  .war div ul,.war2 div ul{
+    padding: 0;
+  }
+  .war div ul li:first-child,.war2 div ul li:first-child {
+    font-size: 30px;
+  }
+  .story {
+    height: 20vh;
+    overflow: auto;
+  }
+  .bob{
+    display: block;
+  }
+  .bb2{
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 15px;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
+    gap: 10px;
+  }
+  .slide h1 {
+    width: 55%;
+    font-size: 70px;
+  }
+
+}
+
+
+
+
+/* page playvideos.html */
+/* .body {
+    background-image: linear-gradient(rgb(0 0 0 / 42%),rgb(0 0 0 / 68%)),url(https://weciimaa.online/wp-content/uploads/2023/05/فيلم-Fast-X-2023-scaled.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+#videoPlayer{
+  width: 50%;
+  height: 70vh;
+  border: 3px solid #9E9E9E;
+  border-radius: 10px;
+}
+.play{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 767px){
+  #videoPlayer{
+    width: 96%;
+    height: 35vh;
+  }
+  .play{
+    height: 50vh;
+  }
+}
